@@ -198,7 +198,7 @@ You can deploy this website using:
 
 ## 👨‍💻 Author
 
-**Sandeep**
+**INDUMATHI**
 
 - 🎓 Electronics & Communication Engineering Student
 - 💻 Web Developer
