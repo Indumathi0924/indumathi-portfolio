@@ -28,3 +28,16 @@ The site showcases skills, projects, achievements, and provides contact informat
 ---
 
 ## 📂 Project Structure
+Indumathi-Portfolio/
+│
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── images/
+│   └── profile.jpg
+│   └── project1.png
+│   └── project2.png
+│   └── project3.png
+└── README.md
