@@ -1,104 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indumathi | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Sandeep</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-  <!-- Sidebar Navigation -->
-  <aside class="sidebar">
-    <div class="profile">
-      <img src="images/profile.jpg" alt="Indumathi" class="profile-pic">
-      <h2>Indumathi</h2>
-      <h2>WEB DEVELOPER</h2>
-      <p>B.Tech Student</p>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-        <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
-        <li><a href="#projects"><i class="fas fa-folder"></i> Projects</a></li>
-        <li><a href="#achievements"><i class="fas fa-trophy"></i> Achievements</a></li>
-        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-      </ul>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <h2 class="logo">Portfolio</h2>
+
+        <ul class="nav-links">
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#achievements">Achievements</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <div class="icons">
+
+            <button id="theme-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <i class="fa-solid fa-bars" id="menu-btn"></i>
+
+        </div>
+
     </nav>
-  </aside>
 
-  <!-- Main Content -->
-  <main>
-    <!-- About -->
-    <section id="about" class="section">
-      <h1>Hello, I’m Indumathi 👋</h1>
-      <p>I am currently pursuing my B.Tech in Computer Science. I’m passionate about web development, problem solving, and creating impactful projects. My goal is to become a full‑stack developer and contribute to innovative solutions.</p>
-    </section>
+</header>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill"><i class="fab fa-html5"></i><span>HTML</span></div>
-        <div class="skill"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
-        <div class="skill"><i class="fab fa-js"></i><span>JavaScript</span></div>
-        <div class="skill"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
-        <div class="skill"><i class="fas fa-comments"></i><span>Communication</span></div>
-        <div class="skill"><i class="fas fa-lightbulb"></i><span>Problem Solving</span></div>
-      </div>
-    </section>
+<!-- ================= HOME ================= -->
 
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="project-cards">
-        <div class="card">
-          <img src="images/project1.png" alt="Project 1">
-          <h3>Portfolio Website</h3>
-          <p>A responsive personal portfolio built with HTML, CSS, and JS.</p>
+<section id="home" class="home">
+
+    <div class="home-text">
+
+        <h3>Hello, I'm</h3>
+
+        <h1>Sandeep</h1>
+
+        <h2>
+            <span class="typing"></span>
+        </h2>
+
+        <p>
+            Electronics & Communication Engineering student passionate about
+            Web Development, Programming and Embedded Systems.
+            I enjoy building responsive websites and innovative projects.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#projects" class="btn">
+                View Projects
+            </a>
+
+            <a href="images/resume.pdf"
+                class="btn btn2"
+                download>
+                Download Resume
+            </a>
+
         </div>
-        <div class="card">
-          <img src="images/project2.png" alt="Project 2">
-          <h3>Weather App</h3>
-          <p>Displays live weather data using API integration.</p>
-        </div>
-        <div class="card">
-          <img src="images/project3.png" alt="Project 3">
-          <h3>Task Manager</h3>
-          <p>A simple to‑do app with local storage support.</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Achievements -->
-    <section id="achievements" class="section">
-      <h2>Achievements</h2>
-      <ul>
-        <li>Certified in Web Development - Coursera</li>
-        <li>Internship at XYZ Company</li>
-        <li>Winner of Hackathon 2025</li>
-      </ul>
-    </section>
+    </div>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Email: indumathi@example.com</p>
-      <p>Phone: +91 9876543210</p>
-      <p>Location: Kakinada, India</p>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-      <div class="social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </section>
-  </main>
+    <div class="home-image">
+
+        <img src="images/profile.jpg"
+            alt="Profile Photo">
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+    <h2 class="section-title">
+        About Me
+    </h2>
+
+    <div class="about-container">
+
+        <div class="about-text">
+
+            <p>
+
+                I am an Electronics and Communication Engineering student
+                with a strong interest in Front-End Development,
+                Embedded Systems and Problem Solving.
+
+                I enjoy creating responsive websites and continuously
+                learning modern web technologies.
+
+            </p>
+
+            <br>
+
+            <h3>Education</h3>
+
+            <ul>
+
+                <li>B.Tech - Electronics & Communication Engineering</li>
+
+                <li>Pragati Engineering College</li>
+
+            </ul>
+
+            <br>
+
+            <h3>Career Goal</h3>
+
+            <p>
+
+                To become a Full Stack Web Developer while contributing
+                to innovative software and embedded system projects.
+
+            </p>
+
+            <br>
+
+            <h3>Interests</h3>
+
+            <ul>
+
+                <li>Web Development</li>
+
+                <li>Programming</li>
+
+                <li>IoT Projects</li>
+
+                <li>Reading Technology Blogs</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+    <h2 class="section-title">
+        Skills
+    </h2>
+
+    <div class="skills-container">
+
+        <div class="skill">
+
+            <h3>HTML</h3>
+
+            <div class="progress">
+
+                <span style="width:95%"></span>
+
+            </div>
+
+        </div>
+
+        <div class="skill">
+
+            <h3>CSS</h3>
+
+            <div class="progress">
+
+                <span style="width:90%"></span>
+
+            </div>
+
+        </div>
+
+        <div class="skill">
+
+            <h3>JavaScript</h3>
+
+            <div class="progress">
+
+                <span style="width:80%"></span>
+
+            </div>
+
+        </div>
+
+        <div class="skill">
+
+            <h3>Bootstrap</h3>
+
+            <div class="progress">
+
+                <span style="width:85%"></span>
+
+            </div>
+
+        </div>
+
+        <div class="skill">
+
+            <h3>Communication</h3>
+
+            <div class="progress">
+
+                <span style="width:88%"></span>
+
+            </div>
+
+        </div>
+
+        <div class="skill">
+
+            <h3>Problem Solving</h3>
+
+            <div class="progress">
+
+                <span style="width:92%"></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+    <h2 class="section-title">
+        Projects
+    </h2>
+
+    <div class="project-container">
+
+        <div class="card">
+
+            <img src="images/project1.png">
+
+            <h3>Portfolio Website</h3>
+
+            <p>
+
+                Responsive portfolio website using HTML, CSS and JavaScript.
+
+            </p>
+
+            <h4>HTML CSS JavaScript</h4>
+
+            <a href="#">GitHub</a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/project2.png">
+
+            <h3>Smart Street Lighting</h3>
+
+            <p>
+
+                Arduino based automatic street lighting using
+                IR sensors and LDR.
+
+            </p>
+
+            <h4>Arduino C Electronics</h4>
+
+            <a href="#">GitHub</a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/project3.png">
+
+            <h3>Student Management</h3>
+
+            <p>
+
+                Student management website with responsive interface.
+
+            </p>
+
+            <h4>HTML CSS JS</h4>
+
+            <a href="#">GitHub</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section id="achievements">
+
+    <h2 class="section-title">
+
+        Achievements & Certifications
+
+    </h2>
+
+    <div class="achievement-container">
+
+        <div class="achievement">
+
+            <i class="fa-solid fa-award"></i>
+
+            <h3>Web Development</h3>
+
+            <p>Brain O Vision Certification</p>
+
+        </div>
+
+        <div class="achievement">
+
+            <i class="fa-solid fa-certificate"></i>
+
+            <h3>Design Thinking</h3>
+
+            <p>SDGs Workshop Certificate</p>
+
+        </div>
+
+        <div class="achievement">
+
+            <i class="fa-solid fa-laptop-code"></i>
+
+            <h3>Internship</h3>
+
+            <p>Web Development Internship</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <h2 class="section-title">
+
+        Contact Me
+
+    </h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <p>
+
+                <i class="fa-solid fa-envelope"></i>
+
+                sandeep@email.com
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-phone"></i>
+
+                +91 9876543210
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Andhra Pradesh, India
+
+            </p>
+
+            <div class="social">
+
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                <a href="#"><i class="fab fa-github"></i></a>
+
+                <a href="#"><i class="fab fa-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                required>
+
+            <textarea
+                placeholder="Message"
+                rows="5"></textarea>
+
+            <button
+                type="submit"
+                class="btn">
+
+                Send Message
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 Sandeep | All Rights Reserved
+
+    </p>
+
+</footer>
+
+<!-- Scroll Button -->
+
+<button id="topBtn">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- JavaScript -->
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
